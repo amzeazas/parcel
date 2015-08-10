@@ -12,7 +12,7 @@ describe('the parcel path', {:type => :feature}) do
     fill_in('depth', :with => 2)
     fill_in('weight', :with => 2)
     fill_in('distance', :with => 100)
-    select('5', :from => 'speed')
+    select('First Class (up to 1 week)', :from => 'speed')
     click_button('CALCULATE COST')
     expect(page).to have_content('30')
   end
