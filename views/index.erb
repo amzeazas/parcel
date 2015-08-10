@@ -1,0 +1,44 @@
+<center>
+<h1>Welcome to Pika Parcel!</h1>
+<br>
+<h3>Thank you for choosing Pika Parcel to ship your goods. In order to calculate an accurate cost, we will need to know more about your shipment. Please fill out the fields below and click <strong>CALCULATE COST</strong> to see your total cost.</h3>
+</center>
+
+<br>
+<br>
+
+<form action="/cost">
+  <div class="form-group">
+    <label for="parcel">Please tell us a bit more about your package. (round up to the nearest whole number)</label>
+
+    <br>
+
+    <input id="length" name="length" class="form-control" type="number" placeholder="Enter your package length (in feet) here.">
+    <input id="width" name="width" class="form-control" type="number" placeholder="Enter your package width (in feet) here.">
+    <input id="depth" name="depth" class="form-control" type="number" placeholder="Enter your package depth (in feet) here.">
+    <input id="weight" name="weight" class="form-control" type="number" placeholder="Enter your package weight (in pounds) here.">
+  </div>
+
+  <br>
+  <br>
+
+  <div class="form-group">
+    <label for="destination">Please tell us how far your package is going (round up to the nearest mile).</label>
+    <input id="distance" name="distance" class="form-control" type="number" opti="Enter your package distance (in miles) here.">
+  </div>
+
+  <br>
+
+  <div class="form-group">
+    <label for="speed">Please tell us how quickly you would like your package delivered.</label>
+    <select class="form-control" id="speed" name="speed">
+      <option value="5">First Class (up to 1 week)</option>
+      <option value="10">Second Class (1-2 weeks)</option>
+      <option value="15">Third Class (more than 2 weeks)</option>
+    </select>
+  </div>
+
+  <br>
+
+  <center><button type="submit" class="btn">CALCULATE COST</button></center>
+</form>
